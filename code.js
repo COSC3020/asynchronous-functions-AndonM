@@ -5,11 +5,8 @@ IN THE KEY FINDER FUNCTION TO THE ASYNCHIFY FUNCTION)
 */
 
 function countOccurrencesAsync(array, key) {
-    if (array.length == 0) {
-        return [];
-    }
-    else if (array.length == 1) {
-        return array[0];
+    if (array.length < 1) {
+        return 0;
     }
     else {
         return new Promise((resolve) => {
