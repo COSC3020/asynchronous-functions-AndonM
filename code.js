@@ -5,6 +5,9 @@ IN THE KEY FINDER FUNCTION TO THE ASYNCHIFY FUNCTION)
 */
 
 function countOccurrencesAsync(array, key) {
+    if array.length < 1 {
+        return [];
+    }
     return new Promise((resolve) => {
       const count = array.reduce((acc, element) => (element === key ? acc + 1 : acc), 0);
       resolve(count);
