@@ -18,3 +18,6 @@ this.
 
 What is the time complexity of your implementation (worst-case $\Theta$)? Add
 your answer, including your reasoning, to this markdown file.
+
+In the best, average, and worst-cases, we must iterate throught the entire array regardless in order to check for matches with the key. 
+(not doing so means we potentially miss a match) This gives us a time complexity of $\Theta(n)$ where n represents the number of elements in our array to search.
